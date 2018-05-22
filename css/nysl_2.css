@@ -1,0 +1,86 @@
+body {
+    font: 14px/24px "Source Code Pro", Arial, Helvetica, Sans Serif;
+    background-color: white;
+    }
+
+header{
+    position: absolute;
+    align-items: center;
+    top: 50px;
+    width: 100%;
+    display: block;
+    min-height: 200px;
+    background-image: url(images/design2_image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+h2 {
+    position: relative;
+    width: 1100px;
+    top: -5px;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+header img {
+    margin-top: 0px;
+    top: 270px;
+    left: 20px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    border: 4px dotted black;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+h1 {
+    margin: 0;
+    position: relative;
+    top: 200px;
+    font-size: 34px;
+    padding: 10px 0 8px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: block;
+    position: relative;
+    right: 40px;
+    top: -5px;
+    float: right;
+}
+nav a {
+    text-decoration: none;
+    background-color: skyblue;
+    border: 1px solid black;
+    padding: 0 3px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.info {
+    position: relative;
+    font-size: 20px;
+    top: 270px;
+    width: 70%;
+    left: 300px;
+}
+
+.prim {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.sec {
+    position: relative;
+    left: 30px;
+    margin-top: 0;
+}

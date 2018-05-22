@@ -1,0 +1,433 @@
+body {
+/*
+    display: flex;
+    justify-content: center;
+*/
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(images/design1_image1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+/*    margin: 0;*/
+}
+
+.whole_page {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: inline-block;
+    width: 1100px;
+    min-height: 600px;
+    margin: 0 120px 0 120px;
+    background-color: #ffffffd1; 
+    border: 5px ridge #f4f4f4;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    margin: 20px 0 0 20px;
+    border-left: 8px dotted #ffffffd1;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 5px 0 0 40px;
+    margin: 44px 0 5px 150px;
+    border-top: 5px solid #a3fe3b;
+}
+    
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    background-color: #033949;
+}
+
+nav a {
+    text-decoration: none;
+    color: beige;
+    border-top: 3px solid #033949;
+    border-bottom: 3px solid #033949;
+    padding: 4px 5px;
+    margin: 0px 2px;
+    display: inline-block;
+}
+
+nav a:hover {
+    border-top: 3px solid #a3fe3b;
+}
+
+.current {
+    color: #a3fe3b;
+}
+
+h2 {
+    font-size: 20px;
+    color: dimgrey;
+    padding: 0 0 5px 40px;
+    margin: 5px 0 0 150px;
+    border-bottom: 5px solid #a3fe3b;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.info {
+    font-size: 17px;
+    width: 80%;
+    margin: 80px auto 20px auto;
+    height: auto;
+    min-width: 700px;
+    min-height: 100px;
+    
+}
+
+.flex {
+    display: flex;
+}
+
+.event {
+    margin: 5px;
+    border-left: 1px solid #a3fe3b;
+    display: block;
+    width: 30%;
+/*    float: left;*/
+}
+
+p {
+    padding-left: 30px;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.game_day {
+    text-align: left;
+    text-decoration: underline;
+    font-style: italic;
+    padding: 10px 0;
+    
+}
+
+h3, 
+.rules_title {
+    font-weight: bold;
+    font-size: 1.17em;
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+.rules_title,
+.rules_subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sec.subsubtitle {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+
+ul .square {
+    list-style-type: square;
+}
+
+ol, ul {
+    margin-top: 0;   
+}
+
+ol li ol li {
+    list-style-type: lower-alpha;
+}
+
+ol li {
+    margin: 0 auto;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.normal_font {
+    font-weight: normal;
+    text-transform: none;
+}
+
+.no_margin {
+    margin: 0;
+}
+
+.name_list {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sec {
+    padding-left: 30px;
+    margin-top: 0;
+}
+
+.table1,
+.table2 {
+    width: 74%;
+    border-collapse: collapse;
+    margin: 0 0 40px 10%;
+}
+
+th,
+.table1 td,
+.table2 td {
+    vertical-align: top;
+    width: 20%;
+    padding-left: 0;
+}
+
+.table1 th,
+.table2 th {
+    color: gray;
+    background-color: #a3fe3b70; 
+    font-size: 20px;
+    text-align: left;
+    text-decoration-color: black;
+    border-bottom: 3px solid black;
+}
+
+.table1 td,
+.table2 td {
+    text-align: left;
+    padding-bottom: 0;
+}
+
+tbody tr:nth-child(odd) {
+    border-top: 1px solid black;
+    background-color: #80808029;
+}
+
+tbody tr:first-child {
+    border: 0;
+}
+
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100
+}
+
+.cell {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 45%;
+    margin: 10px;
+}
+
+.place {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.school {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 30px;
+    width: 45%;
+}
+
+.coord {
+    display: flex;
+    text-align: right;
+    min-height: 30px;
+    width: 50%;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5px 0 40px 0;
+    border-bottom: 3px ridge #a3fe3b70;
+    height: 200px;
+    width: 90%;
+}
+
+.info_footer {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.rows {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.footer_content {
+    display: flex;
+    flex-flow: row wrap;
+}
+.day {
+    text-align: left;
+    padding-left: 5%;
+}
+
+.registration_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.registration_title h3 {
+    font-size: 30px;
+    font-style: normal;
+}
+
+.reg_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_header {
+    display: flex;
+    flex-flow: wrap row;
+    margin-bottom: 10px;
+}
+
+.form_body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form_footer {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.half_row {
+    display: flex;
+    width: 50%;
+    flex-grow: 1;
+    margin: 4px 0;
+}
+
+.full_row {
+    display: flex;
+    width: 100%;
+}
+
+.group {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sub_group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.sub_group_small {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.positions {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.size {
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+    background-color: #eaeaeac7;
+}
+
+.signature {
+    display: flex;
+    width: auto;
+    margin-top: 10px;
+}
+
+.signature div {
+    justify-content: flex-start;
+}
+
+.date {
+     border-radius: 5px;
+    background-color: #eaeaeaa1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons input:hover {
+    color: white;
+}
+
+.buttons input {
+    height: 35px;
+    width: 80px;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 10px 10px 10px;
+}
+
+.submit input {
+    background-color: #32fd32ab;
+    border-radius: 7px;
+}
+
+.reset input {
+    background-color: #ff3a3acf;
+    border-radius: 7px;
+
+}
+
+.today {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.required_fields {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 11px;
+    color: red;
+}
+
+.asterisk {
+    color: red;
+}
+
+fieldset {
+    border: 0;
+    margin-bottom: 5px;
+}
+
+
+
+

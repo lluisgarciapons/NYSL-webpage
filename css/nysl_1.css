@@ -1,0 +1,78 @@
+body {
+    font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+    background-color: white;
+    }
+
+header{
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    display: block;
+    min-height: 250px;
+    background-image: url(images/design1_image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+h2 {
+    position: relative;
+    width: 1100px;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 45px;
+    padding-left: 10px;
+}
+
+header img {
+    margin-top: 0px;
+    top: 150px;
+    left: 900px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+h1 {
+    margin: 0;
+    position: relative;
+    top: 250px;
+    font-size: 34px;
+    padding: 10px 0 8px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: block;
+    position: relative;
+    width: 80%;
+    top: 270px;
+    left: 20px;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+}
+
+.info {
+    position: relative;
+    top: 185px;
+    width: 70%;
+    left: 300px;
+}
+
+.prim {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.sec {
+    position: relative;
+    left: 30px;
+    margin-top: 0;
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="css/images/nysl_logo.ico">
+    <title>NYSL &#124; Registration Page</title>
+    <link rel="stylesheet" href="css/nysl_3.css">
+</head>
+<body>
+    <div class="whole_page">
+    <div class="container">
+        <header>
+            <div>
+                <a href="index.html"> <img id="logo" src="css/images/nysl_logo.png" alt="NYSL_logo"></a>  
+            </div>
+            <div class="nysl">
+                <h1>Northside Youth Soccer League</h1>
+            </div>
+                <nav>
+                    <a href="index.html">Home</a> 
+                    <a href="about.html">About NYSL</a> 
+                    <a href="contact.html">Contact</a>
+                    <a href="rules.html">Rules</a>
+                    <a href="game_info.html">Game Info</a>
+                    <a class="current" href="registration.html">Registration</a>
+                </nav>
+            <div class="title">
+                <h2>Registration</h2>
+            </div>
+        </header>
+        <div class="info">
+            <div class="registration_title">
+                <h3>Registration Form</h3>
+            </div>
+        <form action="show_data.html" method="get" autocomplete="on" class="reg_form">
+            <div class="form_header">
+                <div class="half_row">Player's First Name<span class="asterisk">&#42;</span>:
+                <input class="size" type="text" name="first_name" required></div>
+                <div class="half_row">Last Name<span class="asterisk">&#42;</span>:
+                <input class="size" type="text" name="last_name" required></div>
+                <div class="full_row">Street Address<span class="asterisk">&#42;</span>:
+                <input class="size" type="text" name="street_address" required></div>
+                <div class="half_row">City<span class="asterisk">&#42;</span>:
+                <input class="size" type="text" name="city_name" required></div>
+                <div class="half_row">Zip Code<span class="asterisk">&#42;</span>: 
+                <input class="size" type="text" name="zip_code" required></div>
+                <div class="half_row">Birth Date<span class="asterisk">&#42;</span>:
+                <input class="date" type="date" name="birth_date" min="1979-12-31" required></div>
+                <div class="half_row">Gender<span class="asterisk">&#42;</span>:
+                <input type="radio" name="gender" value="male" required>Male
+                <input type="radio" name="gender" value="female" required>Female
+                <input type="radio" name="gender" value="other" required>Other</div>
+                <div class="full_row">Grade<span class="asterisk">&#42;</span>:
+                <input type="radio" name="grade" value="pre-school" required>Pre-School
+                <input type="radio" name="grade" value="1st_grade" required>1<sup>st</sup>
+                <input type="radio" name="grade" value="2nd_grade" required>2<sup>nd</sup>
+                <input type="radio" name="grade" value="3rd_grade" required>3<sup>rd</sup>
+                <input type="radio" name="grade" value="4th_grade" required>4<sup>th</sup>
+                <input type="radio" name="grade" value="5th_grade" required>5<sup>th</sup></div>
+                <div class="full_row">Parent&#47;Guardian<span class="asterisk">&#42;</span>:
+                <input class="size" type="text" name="adult_name" required></div>
+                <div class="half_row">Contact Phone<span class="asterisk">&#42;</span>:
+                <input class="size" type="tel" name="contact_phone" required></div>
+                <div class="half_row">Contact Email:
+                <input class="size" type="email" name="contact_email"></div>
+            </div>
+            <div class="form_body">
+            <fieldset>
+                <legend>                   
+                    <span class="bold">Which elementary schools do you live near?</span>
+                </legend>
+                <div class="group">
+                    <div class="sub_group">
+                        <legend>
+                            <span class="bold">First Closest School:</span>
+                        </legend>
+                        <input class="size half_row" list="schools1" name="closest_school_1" autocomplete="off">
+                            <datalist id="schools1">
+                                <option value="AJ Katzenmaier"></option>
+                                <option value="Greenbay"></option>
+                                <option value="Howard A Yeager"></option>
+                                <option value="Marjorie P Hart"></option>
+                                <option value="North Elementary"></option>
+                                <option value="South Elementary"></option>     
+                            </datalist>
+                        
+<!-- Here below, the code for the schools in "radio" format-->                        
+<!--
+                        <div class="group">
+                            <div class="sub_group_small">
+                                <div>
+                                <input type="radio" name="1st_school" value="aj katzenmaier">AJ Katzenmaier</div>
+                                <div>
+                                <input type="radio" name="1st_school" value="marjorie p hart">Marjorie P Hart</div>
+                                <div>
+                                <input type="radio" name="1st_school" value="greenbay">Greenbay</div>
+                            </div>
+                            <div class="sub_group_small">
+                                <div>
+                                <input type="radio" name="1st_school" value="north elementary">North Elementary</div>
+                                <div>
+                                <input type="radio" name="1st_school" value="howard a yeager">Howard A Yeager</div>
+                                <div>
+                                <input type="radio" name="1st_school" value="south elementary">South Elemenetary</div> 
+                            </div>    
+                        </div>
+-->
+                    </div> 
+                    <div class="sub_group">
+                        <legend>
+                            <span class="bold">Second Closest School:</span>
+                        </legend>
+                        <input class="size half_row" list="schools2" name="closest_school_2" autocomplete="off">
+                            <datalist id="schools2">
+                                <option value="AJ Katzenmaier"></option>
+                                <option value="Greenbay"></option>
+                                <option value="Howard A Yeager"></option>
+                                <option value="Marjorie P Hart"></option>
+                                <option value="North Elementary"></option>
+                                <option value="South Elementary"></option>     
+                            </datalist>
+                        
+<!-- Here below, the code for the schools in "radio" format-->    
+<!--
+                        <div class="group">
+                            <div class="sub_group_small">
+                                <div>
+                                <input type="radio" name="2nd_school" value="aj katzenmaier">AJ Katzenmaier</div>
+                                <div>
+                                <input type="radio" name="2nd_school" value="marjorie p hart">Marjorie P Hart</div>
+                                <div>
+                                <input type="radio" name="2nd_school" value="greenbay">Greenbay</div>
+                            </div>
+                            <div class="sub_group_small">
+                                <div>
+                                <input type="radio" name="2nd_school" value="north elementary">North Elementary</div>
+                                <div>
+                                <input type="radio" name="2nd_school" value="howard a yeager">Howard A Yeager</div>
+                                <div>
+                                <input type="radio" name="2nd_school" value="south elementary">South Elemenetary</div> 
+                            </div>    
+                        </div>
+-->
+                        
+                    </div>
+                </div>    
+            </fieldset>
+            <fieldset>
+                <div class="group">
+                    <div>
+                        <legend>
+                            <span class="bold">What position(s) do you normally play?</span> (chech all that apply)
+                        </legend>
+                        <div class="group">
+                            <div class="positions">
+                                <div><input type="checkbox" name="position_played" value="forward">Forward</div>
+                                <div><input type="checkbox" name="position_played" value="midfield">Midfield</div>
+                            </div>
+                            <div class="positions">
+                                <div><input type="checkbox" name="position_played" value="defense">Defense</div>
+                                <div><input type="checkbox" name="position_played" value="goalkeeper">Goalkeeper</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <legend>
+                            <span class="bold">What position(s) do you want to play?</span> (chech all that apply)
+                        </legend>
+                        <div class="group">
+                            <div class="positions">
+                                <div><input type="checkbox" name="position_wanted" value="forward">Forward</div>
+                                <div><input type="checkbox" name="position_wanted" value="midfield">Midfield</div>
+                            </div>
+                            <div class="posiotions">
+                                <div><input type="checkbox" name="position_wanted" value="defense">Defense</div>
+                                <div><input type="checkbox" name="position_wanted" value="goalkeeper">Goalkeeper</div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><input type="checkbox" name="uniform" value="already have a uniform"><span class="bold">Already Have a Uniform</span>
+                </legend>
+                <div class="group">
+                    <div class="sub_group">
+                        <legend>
+                            <span class="bold">Jersey Size:</span>
+                        </legend>
+                        <div class="group">
+                            <div class="sub_group_small">
+                                <div>
+                                    <input type="radio" name="jersey_size" value="youth small">Youth Small
+                                </div>
+                                <div>
+                                    <input type="radio" name="jersey_size" value="youth medium">Youth Medium
+                                </div>
+                                <div>
+                                    <input type="radio" name="jersey_size" value="youth Large">Youth Large
+                                </div>
+                                <div>
+                                    <input type="radio" name="jersey_size" value="small">Small
+                                </div>
+                            </div>
+                            <div class="sub_group_small">
+                                <div>
+                                    <input type="radio" name="jersey_size" value="medium">Medium
+                                </div>
+                                <div>
+                                    <input type="radio" name="jersey_size" value="large">Large
+                                </div>
+                                <div>
+                                    <input type="radio" name="jersey_size" value="extra-large">Extra-Large
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_group">
+                        <legend>
+                            <span class="bold">Shorts Size:</span>
+                        </legend>
+                        <div class="group">
+                            <div class="sub_group_small">
+                                <div>
+                                    <input type="radio" name="shorts_size" value="youth small">Youth Small
+                                </div>
+                                <div>
+                                    <input type="radio" name="shorts_size" value="youth medium">Youth Medium
+                                </div>
+                                <div>
+                                    <input type="radio" name="shorts_size" value="youth Large">Youth Large
+                                </div>
+                                <div>
+                                    <input type="radio" name="shorts_size" value="small">Small       
+                                </div>
+                            </div>
+                            <div class="sub_group_small">
+                            <div>
+                                <input type="radio" name="shorts_size" value="medium">Medium
+                            </div>
+                            <div>
+                                <input type="radio" name="shorts_size" value="large">Large
+                            </div>
+                            <div>
+                                <input type="radio" name="shorts_size" value="extra-large">Extra-Large
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            </div>
+            <div class="form_footer">
+                <fieldset>
+                    <legend>
+                        <span class="bold cursive">Permission to Play</span>
+                    </legend>
+                    <legend>
+                        I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+                        Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+                        accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                        employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+                        on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+                        sponsored activities, which transportation.<br>
+                        By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+                        cancellation policy and agree to its terms.
+                    </legend>
+                    <div class="signature">
+                        <div class="half_row">
+                            Parent&#47;Guardian Signature<span class="asterisk">&#42;</span>:
+                            <input class="size" type="text" name="signature" required>
+                        </div>
+                        <div>
+                            Date<span class="asterisk">&#42;</span>:
+                            <input class="date" type="date" name="today" required>
+                        </div>
+                    <div class="required_fields">
+                         &#42; fields are required.
+                    </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="buttons">
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+                <div class="reset">
+                    <input type="reset" value="clear all">
+                </div>
+            </div>
+        </form>
+        </div>    
+    </div> 
+    </div>
+</body>
+</html>

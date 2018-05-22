@@ -1,0 +1,88 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="css/images/nysl_logo.ico">
+    <title>NYSL &#124; Feedback Sent</title>
+    <link rel="stylesheet" href="css/nysl_3.css">
+</head>
+<body>
+<div class="container">
+    <header>
+            <div>
+                <a href="index.html"> <img id="logo" src="css/images/nysl_logo.png" alt="NYSL_logo"></a>  
+            </div>
+            <div class="nysl">
+                <h1>Northside Youth Soccer League</h1>
+            </div>
+                <nav>
+                    <a href="index.html">Home</a> 
+                    <a href="about.html">About NYSL</a> 
+                    <a href="contact.html">Contact</a>
+                    <a href="rules.html">Rules</a>
+                    <a href="game_info.html">Game Info</a>
+                    <a href="registration.html">Registration</a>
+                </nav>
+            <div class="title">
+                <h2>Registration Completed</h2>
+            </div>
+        </header>
+<div class="info">
+<h1><font size="+1">The following information has been sent as your
+  feedback:</font></h1>
+<p align=center>&nbsp;</p>
+
+<table class="table3" border="1" align=center width="226">
+  <tr>
+    <th align="center">Form Field</th>
+    <th align="center">Field Value</th>
+  </tr>
+
+<script language="javascript">
+var args = location.search.substr(1).split('&');
+for (var i = 0; i < args.length; ++i) {
+  var parts = args[i].split('=');
+  if (parts != null) {
+    var field = parts[0];
+    var value = parts[1];
+    if (value == null) {
+      value = "null"
+    }
+    else {
+      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+    }
+
+    document.writeln('<tr><td align="center">' + field + '</td>');
+    document.writeln('<td align="center">' + value + '</td></tr>');
+  }
+}
+</script>
+
+<noscript>
+<tr><td>
+<p>You need to turn on Javascript in your browser.</p>
+
+<p>In Microsoft Internet Explorer 4 or greater:</p>
+<ul>
+<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+<li>Click on the "Security" tab.</li>
+<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+and then click on "Settings...".)</li>
+<li>Under "Active scripting" make sure "Enable" is selected.</li>
+</ul>
+
+<p>In Netscape version 4 or greater:</p>
+<ul>
+<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+<li>Click the <b>OK</b> button.</li>
+</ul>
+
+</td></tr>
+</noscript>
+
+</table>
+</div>
+</div>
+</body>
+</html>
